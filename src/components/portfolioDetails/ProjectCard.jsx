@@ -9,9 +9,10 @@ const ProjectCard = () => {
         maxWidth: 900,
         maxHeight: "auto",
         borderRadius: 4,
-        boxShadow: 1,
+        boxShadow: 3,
+        borderWidth: 2,
         "&:hover": {
-          backgroundColor: "#e8e8e8",
+          backgroundColor: "#E6E6E6",
           cursor: "pointer",
         },
       }}

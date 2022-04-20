@@ -1,21 +1,29 @@
 import React from "react";
 import {Box, Grid, Typography, Divider} from "@mui/material";
+import {styled} from "@mui/material/styles";
 
 import PhotosDisplay from "../components/homeDetails/PhotosDisplay";
 
 function HomePage() {
+  const CustomTypography = styled(Typography)(({theme}) => ({
+    [theme.breakpoints.down(1220)]: {
+      fontSize: 17.5,
+    },
+  }));
+
   return (
     <Grid
       container
+      spacing={10}
       direction="row"
       justifyContent="center"
       sx={{
         minHeight: "100vh",
-        background: "linear-gradient(180deg, #EFF1F6 85%, white 15%)",
+        background: "linear-gradient(180deg, #EFF1F6 85%, white 85%)",
         paddingTop: 10,
       }}
     >
-      <Grid item md={6} sm={12} display="flex" justifyContent="center">
+      <Grid item lg={6} md={12} sm={12} display="flex" justifyContent="center">
         <Box
           sx={{
             paddingLeft: 15,
@@ -46,7 +54,7 @@ function HomePage() {
           >
             Fullstack developer / Data Science
           </Typography>
-          <Typography fontSize={18} textAlign="left" color="#626261">
+          <CustomTypography fontSize={18} textAlign="left" color="#626261">
             I don’t have anything to present to you so much right now, acually I
             have nothing to say so do you guys know that whales are a widely
             distributed and diverse group of fully aquatic placental marine
@@ -56,19 +64,20 @@ function HomePage() {
             science specialist yet but I’ll be soon and also don’t have any
             pictures so, here’s come a whale, oh sorry it’s just a random
             picture from internet ->
-          </Typography>
+          </CustomTypography>
         </Box>
       </Grid>
       <Grid
         item
-        md={6}
+        lg={6}
+        md={12}
         sm={12}
         sx={{
           display: "flex",
           justifyContent: "center",
         }}
       >
-        <Box paddingTop={22}>
+        <Box marginTop={3}>
           <PhotosDisplay />
         </Box>
       </Grid>

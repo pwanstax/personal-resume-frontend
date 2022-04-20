@@ -21,10 +21,10 @@ const PortfolioPage = () => {
   const handleView = () => {
     if (view === "gallery") {
       setView("list");
-      setIconView(<ViewAgendaIcon />);
+      setIconView(<GridViewIcon />);
     } else {
       setView("gallery");
-      setIconView(<GridViewIcon />);
+      setIconView(<ViewAgendaIcon />);
     }
   };
   const handleClickReview = () => {

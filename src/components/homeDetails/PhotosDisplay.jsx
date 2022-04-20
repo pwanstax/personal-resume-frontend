@@ -2,10 +2,17 @@ import React from "react";
 import {Box, Button, Card, CardMedia} from "@mui/material";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import {styled} from "@mui/material/styles";
 
 const PhotosDisplay = () => {
+  const CustomBox = styled(Box)(({theme}) => ({
+    [theme.breakpoints.down("lg")]: {
+      paddingRight: 50,
+      paddingLeft: 50,
+    },
+  }));
   return (
-    <Box>
+    <CustomBox sx={{paddingRight: 5}}>
       <Box display="flex" justifyContent="center">
         <Button sx={{color: "#566F94", fontWeight: "bold"}}>
           <ArrowLeftIcon />
@@ -24,18 +31,19 @@ const PhotosDisplay = () => {
             position: "relative",
             top: 0,
             left: 0,
-            height: "60vh",
-            width: "auto",
+            width: "100%",
+            height: "auto",
             zIndex: 10,
           }}
         />
         <Card
           sx={{
             position: "absolute",
-            top: 21.5,
-            left: 21.5,
-            height: "37vh",
-            width: "65vh",
+            borderRadius: 5,
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "65%",
           }}
         >
           <CardMedia
@@ -45,7 +53,7 @@ const PhotosDisplay = () => {
           />
         </Card>
       </Box>
-    </Box>
+    </CustomBox>
   );
 };
 export default PhotosDisplay;

@@ -26,7 +26,7 @@ const IndustryKnowledge = () => {
         paddingRight={5}
       >
         {INDUSTRY_KNOWLEDGE.map((each) => (
-          <Grid item xs={12} sm={12} md={12} marginBottom={3}>
+          <Grid item xs={12} sm={12} md={12} marginBottom={3} key={each}>
             <Typography fontSize={18} textAlign="center">
               {each}
             </Typography>

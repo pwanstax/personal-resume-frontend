@@ -28,7 +28,7 @@ const ToolNTech = () => {
         paddingRight={5}
       >
         {TOOLNTECH.map((each) => (
-          <Grid item xs={12} sm={4} md={6} marginBottom={3}>
+          <Grid item xs={12} sm={4} md={6} marginBottom={3} key={each}>
             <Typography fontSize={18} textAlign="center">
               {each}
             </Typography>

@@ -36,7 +36,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
 const CustomizedTabs = ({value, setValue}) => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log(value);
+    console.log(newValue);
   };
   return (
     <StyledTabs value={value} onChange={handleChange}>

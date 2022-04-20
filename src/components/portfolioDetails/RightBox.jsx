@@ -12,7 +12,12 @@ const RightBox = () => {
       }}
     >
       <Grid item sm={7} display="flex" justifyContent="center" color="#537BA9">
-        <Typography fontSize={30} marginBottom={3} textAlign="center">
+        <Typography
+          fontSize={30}
+          marginBottom={3}
+          textAlign="center"
+          fontWeight="bold"
+        >
           Depression Web Application
         </Typography>
       </Grid>
