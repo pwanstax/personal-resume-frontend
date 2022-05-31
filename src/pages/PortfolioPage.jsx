@@ -12,6 +12,8 @@ import CustomSpeedDial from "../components/CustomSpeedDial";
 import ReviewBox from "../components/ReviewBox";
 import CustomAlert from "../components/portfolioDetails/CustomAlert";
 
+import {info} from "../utils/constants/portfolioInfo";
+
 const PortfolioPage = () => {
   const [view, setView] = useState("list");
   const [iconView, setIconView] = useState(<GridViewIcon />);
@@ -74,7 +76,12 @@ const PortfolioPage = () => {
         </Grid>
         <Grid item xs={3} display="flex" justifyContent="center" />
       </Grid>
-      {view === "gallery" ? <GalleryView /> : <ListView />}
+
+      {view === "gallery" ? (
+        <GalleryView data={info} />
+      ) : (
+        <ListView data={info} />
+      )}
     </Box>
   );
 };

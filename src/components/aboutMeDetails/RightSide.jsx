@@ -13,6 +13,7 @@ const RightSide = () => {
       width: "90%",
     },
   }));
+
   return (
     <CustomBox
       sx={{
@@ -30,16 +31,28 @@ const RightSide = () => {
         justifyContent="center"
       >
         <Grid item display="flex" justifyContent="center">
-          <Avatar
-            alt="Medium"
-            src={require("../../utils/images/medium.png")}
-            sx={{marginRight: 3}}
-          />
-          <Avatar
-            alt="Medium"
-            src={require("../../utils/images/medium.png")}
-            sx={{marginLeft: 3}}
-          />
+          <a
+            href="https://medium.com/@pawankanjeam/portfolio-7b6166e250c6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Avatar
+              alt="Medium"
+              src={require("../../utils/images/medium.png")}
+              sx={{marginRight: 3}}
+            />
+          </a>
+          <a
+            href="mailto:tutor_pawan@hotmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Avatar
+              alt="E-mail"
+              src={require("../../utils/images/email.png")}
+              sx={{marginLeft: 3}}
+            />
+          </a>
         </Grid>
       </Grid>
       <WorkExperience />

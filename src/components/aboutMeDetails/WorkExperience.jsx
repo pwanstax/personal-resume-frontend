@@ -30,7 +30,7 @@ const WorkExperience = () => {
       >
         <Grid item xs={12} sm={12} md={12} marginBottom={3}>
           <Typography fontSize={18} textAlign="center">
-            NOOOOOOOOOO
+            Working at fastwork
           </Typography>
         </Grid>
       </Grid>

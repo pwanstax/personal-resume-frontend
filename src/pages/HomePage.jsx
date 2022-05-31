@@ -1,10 +1,11 @@
 import React from "react";
 import {Box, Grid, Typography, Divider} from "@mui/material";
+import {red} from "@mui/material/colors";
 import {styled} from "@mui/material/styles";
 
 import PhotosDisplay from "../components/homeDetails/PhotosDisplay";
 
-function HomePage() {
+const HomePage = () => {
   const CustomTypography = styled(Typography)(({theme}) => ({
     [theme.breakpoints.down(1220)]: {
       fontSize: 17.5,
@@ -35,7 +36,7 @@ function HomePage() {
           </Typography>
           <Divider
             sx={{
-              background: "#313130",
+              background: red[900],
               borderWidth: 2,
               maxWidth: 200,
               margin: "auto",
@@ -52,18 +53,16 @@ function HomePage() {
             }}
             textAlign="right"
           >
-            Fullstack developer / Data Science
+            Frontend / Backend developer
           </Typography>
           <CustomTypography fontSize={18} textAlign="left" color="#626261">
-            I don’t have anything to present to you so much right now, acually I
-            have nothing to say so do you guys know that whales are a widely
-            distributed and diverse group of fully aquatic placental marine
-            mammals. They are an informal grouping within the infraorder
-            Cetacea, which usually excludes dolphins and porpoises. By the way,
-            right now I’m just a student and I’m not fullstack dev or data
-            science specialist yet but I’ll be soon and also don’t have any
-            pictures so, here’s come a whale, oh sorry it’s just a random
-            picture from internet ->
+            Hi Again! I am Pawan Kanjeam (Ter). I am currently studying for a
+            Bachelor’s Degree in Computer Engineering from Chulalongkorn
+            University. My interest in technology and innovation drives me to
+            become a Computer Engineering student. I believe that this field is
+            boundless, the technology keeps evolving, and so many things are
+            waiting for me to explore. My current goal is to gain as much
+            knowledge as possible in this field and thrive in my career.
           </CustomTypography>
         </Box>
       </Grid>
@@ -83,6 +82,6 @@ function HomePage() {
       </Grid>
     </Grid>
   );
-}
+};
 
 export default HomePage;

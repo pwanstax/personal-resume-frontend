@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Box, Grid, Typography} from "@mui/material";
 
-const RightBox = () => {
+const RightBox = ({data}) => {
   return (
     <Grid
       container
@@ -9,35 +9,39 @@ const RightBox = () => {
       sx={{
         background: "linear-gradient(90deg, transparent 30%, #E6E6E6 30%)",
         paddingTop: 5,
+        width: "100%",
       }}
     >
-      <Grid item sm={7} display="flex" justifyContent="center" color="#537BA9">
+      <Grid item xs={7} display="flex" justifyContent="center" color="#537BA9">
         <Typography
           fontSize={30}
           marginBottom={3}
           textAlign="center"
           fontWeight="bold"
         >
-          Depression Web Application
+          {data.topic}
         </Typography>
       </Grid>
-      <Grid item sm={5}></Grid>
-      <Grid item>
+      <Grid item xs={5}></Grid>
+      <Grid item xs={12}>
         <Box
           marginLeft="30%"
           paddingLeft="5%"
           paddingRight="5%"
           textAlign="center"
         >
-          <Typography fontSize={20}>
-            This web application is under Depression AI project of Chulalongkorn
-            University (D Mind: Detection and Monitoring Intelligence Network
-            for Depression) which participates sicThailand in the final round.
-            In my part which is backend is to process the inputted audio file
-            from the Department of Mental Health into text (JSON file) and to
-            process the same audio file to Voice Activity Detection (VAD) in CSV
-            form.
+          <Typography fontSize={23} marginBottom={2}>
+            {data.description}
           </Typography>
+          <Typography fontSize={20} marginBottom={3}>
+            ({data.time})
+          </Typography>
+          <Typography fontSize={20} textAlign="center">
+            {data.info.map((each) => (
+              <Typography>- {each}</Typography>
+            ))}
+          </Typography>
+
           <Button
             sx={{
               fontSize: 20,
@@ -45,6 +49,7 @@ const RightBox = () => {
               marginTop: 2,
               marginBottom: 3,
             }}
+            onClick={() => window.open(data.link)}
           >
             More Information
           </Button>

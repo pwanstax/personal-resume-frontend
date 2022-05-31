@@ -1,28 +1,67 @@
-import React from "react";
-import {Box, Button, Card, CardMedia} from "@mui/material";
+import React, {useState} from "react";
+import {Box, Button, Card, CardMedia, Grid, Typography} from "@mui/material";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import {styled} from "@mui/material/styles";
 
 const PhotosDisplay = () => {
+  const [imageW, setImageW] = useState(1000);
+  const [imageH, setImageH] = useState(600);
+
   const CustomBox = styled(Box)(({theme}) => ({
     [theme.breakpoints.down("lg")]: {
       paddingRight: 50,
       paddingLeft: 50,
     },
   }));
+
+  const nextImage = () => {
+    if (imageH > 1700) {
+      setImageW(1000);
+      setImageH(600);
+    } else {
+      setImageW(imageW + 5);
+      setImageH(imageH + 3);
+    }
+  };
+  const prevImage = () => {
+    if (imageH < 300) {
+      setImageW(1000);
+      setImageH(600);
+    } else {
+      setImageW(imageW - 5);
+      setImageH(imageH - 3);
+    }
+  };
+
   return (
     <CustomBox sx={{paddingRight: 5}}>
-      <Box display="flex" justifyContent="center">
-        <Button sx={{color: "#566F94", fontWeight: "bold"}}>
-          <ArrowLeftIcon />
-          Previous
-        </Button>
-        <Button sx={{color: "#566F94", fontWeight: "bold"}}>
-          Next
-          <ArrowRightIcon />
-        </Button>
-      </Box>
+      <Grid container>
+        <Grid item xs={12} display="flex" justifyContent="center">
+          <Typography sx={{color: "#566F94", fontWeight: "bold", fontSize: 20}}>
+            Random Image form Unsplash
+          </Typography>
+        </Grid>
+        <Grid item xs={12} display="flex" justifyContent="center">
+          <Box>
+            <Button
+              sx={{color: "#566F94", fontWeight: "bold"}}
+              onClick={(_) => prevImage()}
+            >
+              <ArrowLeftIcon />
+              Previous
+            </Button>
+
+            <Button
+              sx={{color: "#566F94", fontWeight: "bold"}}
+              onClick={(_) => nextImage()}
+            >
+              Next
+              <ArrowRightIcon />
+            </Button>
+          </Box>
+        </Grid>
+      </Grid>
       <Box position="relative">
         <img
           src={require("../../utils/images/imac.png")}
@@ -44,14 +83,28 @@ const PhotosDisplay = () => {
             left: 0,
             width: "100%",
             height: "65%",
+            zIndex: 5,
           }}
         >
           <CardMedia
             component="img"
-            image={require("../../utils/images/pic.jpg")}
+            image={`https://source.unsplash.com/random/${imageW}x${imageH}`}
             alt="green iguana"
           />
         </Card>
+        <img
+          src={require("../../utils/images/imac.png")}
+          alt="imac"
+          style={{
+            position: "absolute",
+            borderRadius: 5,
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "65%",
+            zIndex: 1,
+          }}
+        />
       </Box>
     </CustomBox>
   );

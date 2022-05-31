@@ -1,19 +1,19 @@
 import React from "react";
 import {Box} from "@mui/material";
 
-import RightBox from "./RightBox";
-import LeftBox from "./LeftBox";
+import RightBox from "./box/RightBox";
+import LeftBox from "./box/LeftBox";
 
-const ProjectBox = ({side}) => {
+const ProjectBox = ({side, data}) => {
   return (
-    <Box>
+    <Box width="100%">
       {side === "right" ? (
         <Box>
-          <RightBox />
+          <RightBox data={data} />
         </Box>
       ) : (
         <Box>
-          <LeftBox />
+          <LeftBox data={data} />
         </Box>
       )}
     </Box>
