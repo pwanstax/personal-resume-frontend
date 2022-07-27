@@ -1,8 +1,10 @@
 {
+  "/_document": "pages/_document.js",
+  "/AboutMePage": "pages/AboutMePage.html",
+  "/": "pages/index.html",
+  "/PortfolioPage": "pages/PortfolioPage.html",
+  "/api/hello": "pages/api/hello.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/AboutMePage": "pages/AboutMePage.js",
-  "/PortfolioPage": "pages/PortfolioPage.js"
+  "/404": "pages/404.html"
 }
