@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Work Sans");
+
+$primary-font: "Work Sans", sans-serif;
+
+* {
+  font-size: 100px;
+  font-family: $primary-font;
+}
