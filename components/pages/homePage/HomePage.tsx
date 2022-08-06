@@ -35,7 +35,7 @@ const HomePage: NextPage = () => {
       <div className="image-section">
         <div className="image">
           <Image
-            src="https://images.unsplash.com/photo-1659616047373-fe157c10b60e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            src={require("/public/static/images/me1.jpg")}
             layout="fill"
             objectFit="cover"
           />
