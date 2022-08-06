@@ -1,0 +1,48 @@
+@import "../../utilities.scss";
+
+.accordion-container {
+  width: 100%;
+  header {
+    padding: 16px;
+    border-radius: 10px;
+    color: $primary-color;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    @media only screen and (max-width: 800px) {
+      font-size: 18px;
+    }
+  }
+  .content {
+    padding: 12px;
+    display: grid;
+    grid-gap: 12px;
+    justify-items: center;
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-gap: 24px;
+      grid-row-gap: 8px;
+    }
+    @media only screen and (max-width: 350px) {
+      grid-template-columns: auto !important;
+      grid-gap: 24px;
+      grid-row-gap: 8px;
+    }
+    div {
+      background-color: $secondary-background;
+      border-radius: 10px;
+      color: $primary-color;
+      padding: 16px 0;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (max-width: 800px) {
+        font-size: 14px;
+        padding: 16px 8px;
+      }
+    }
+  }
+}

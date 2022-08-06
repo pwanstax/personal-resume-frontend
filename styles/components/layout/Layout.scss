@@ -1,0 +1,30 @@
+@import "../../utilities.scss";
+
+.layout-container {
+  background-color: $primary-background;
+  padding-bottom: 50px;
+  min-height: 100vh;
+
+  .main-section {
+    padding: 0 120px;
+    @media only screen and (max-width: 800px) {
+      padding: 0 48px;
+    }
+  }
+  .content-divider {
+    margin-top: 175px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1150px) {
+      margin-top: 125px;
+    }
+    @media only screen and (max-width: 800px) {
+      margin: 64px 0;
+    }
+    div {
+      width: 350px;
+      border: 2px dashed $caution-color;
+    }
+  }
+}

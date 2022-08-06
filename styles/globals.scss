@@ -1,8 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Work Sans");
+@import "./components/layout/MainNavigation.scss";
+@import "./components/layout/Layout.scss";
 
-$primary-font: "Work Sans", sans-serif;
+@import "./components/pages/HomePage.scss";
+@import "./components/pages/WorkPage.scss";
+@import "./components/pages/AboutPage.scss";
+@import "./components/common/Accordion.scss";
+@import "./utilities.scss";
 
 * {
   font-size: 100px;
   font-family: $primary-font;
+}
+
+body {
+  display: block;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
