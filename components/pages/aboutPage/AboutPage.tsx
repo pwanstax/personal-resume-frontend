@@ -98,6 +98,7 @@ const AboutPage: NextPage = () => {
       <div className="contact-info">
         {imgList.map((imgSrc) => (
           <motion.a
+            key={imgSrc[0]}
             className="image"
             href={imgSrc[1]}
             target="_blank"

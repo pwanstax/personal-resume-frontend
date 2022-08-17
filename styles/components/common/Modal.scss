@@ -1,0 +1,61 @@
+@import "../../utilities.scss";
+
+.modal {
+  width: min(75%, 700px);
+  height: min(75%, 350px);
+  // @media only screen and (max-width: 800px) {
+  //   height: 75%;
+  // }
+  background-color: #dfe5f8;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  padding: 28px;
+
+  .modal-content {
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      color: $primary-color;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 16px;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 16px;
+    }
+    p {
+      padding: 0 16px;
+      font-size: 16px;
+    }
+  }
+  i {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    font-size: 42px;
+
+    cursor: pointer;
+  }
+}
+.backdrop {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000075;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
