@@ -66,11 +66,20 @@ const Modal = ({
 
         <motion.i
           onClick={handleClose}
-          className="fa fa-times-circle"
+          className="fa fa-times-circle cross-icon"
           aria-hidden="true"
           initial={{opacity: 0.2}}
-          whileHover={{opacity: 1, transform: "rotateZ(360deg)"}}
+          whileHover={{opacity: 0.7, transform: "rotateZ(360deg)"}}
         />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <motion.i
+            onClick={handleClose}
+            className="fa fa-medium medium-icon"
+            aria-hidden="true"
+            initial={{opacity: 0.2}}
+            whileHover={{opacity: 1, transform: "rotateZ(360deg)"}}
+          />
+        </a>
       </motion.div>
     </Backdrop>
   );

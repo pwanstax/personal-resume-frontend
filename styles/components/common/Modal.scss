@@ -37,13 +37,21 @@
       font-size: 16px;
     }
   }
-  i {
+
+  .cross-icon {
     position: fixed;
     top: 12px;
     right: 12px;
     font-size: 42px;
-
     cursor: pointer;
+  }
+  .medium-icon {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    font-size: 36px;
+    cursor: pointer;
+    color: $primary-color;
   }
 }
 .backdrop {
