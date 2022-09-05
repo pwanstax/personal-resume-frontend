@@ -1,12 +1,28 @@
 import {motion, Variants, useAnimation} from "framer-motion";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const MainNavigation = () => {
   const [isLightMode, setIsLightMode] = useState(true);
   const controlMode = useAnimation();
+  const [html, setHTML] = useState<HTMLHtmlElement | null>();
+
+  useEffect(() => {
+    const html: HTMLHtmlElement | null = document.querySelector("html");
+    setHTML(html);
+    html!.dataset.theme = `light`;
+  }, []);
+
+  function switchTheme() {
+    if (html!.dataset.theme === "light") {
+      html!.dataset.theme = "dark";
+    } else {
+      html!.dataset.theme = "light";
+    }
+  }
 
   const handleMode = () => {
     controlMode.start("changemode");
+    switchTheme();
     setTimeout(function () {
       setIsLightMode(!isLightMode);
     }, 500);
@@ -23,6 +39,7 @@ const MainNavigation = () => {
       },
     },
   };
+
   return (
     <div className="navigation-container">
       <a href="#">Pawan Kanjeam</a>

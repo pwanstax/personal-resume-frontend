@@ -1,12 +1,10 @@
-@import "../../utilities.scss";
-
 .modal {
   width: min(75%, 700px);
   height: min(75%, 350px);
   // @media only screen and (max-width: 800px) {
   //   height: 75%;
   // }
-  background-color: #dfe5f8;
+  background-color: var(--modal-background);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -15,10 +13,11 @@
   padding: 28px;
 
   .modal-content {
+    color: var(--description-color);
     h2 {
       font-size: 36px;
       text-align: center;
-      color: $primary-color;
+      color: var(--primary-color);
     }
     h3 {
       font-size: 20px;
@@ -51,7 +50,7 @@
     left: 16px;
     font-size: 36px;
     cursor: pointer;
-    color: $primary-color;
+    color: var(--primary-color);
   }
 }
 .backdrop {

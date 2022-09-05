@@ -16,16 +16,10 @@ const AccordionComponent = ({
   expanded,
   setExpanded,
 }: AccordionComponentProps) => {
-  // By using `AnimatePresence` to mount and unmount the contents, we can animate
-  // them in and out while also only rendering the contents of open accordions
   return (
     <>
       <motion.header
         initial={false}
-        animate={{
-          backgroundColor: expanded ? "#62626114" : "#e1e6f7",
-          color: expanded ? "#0000008a" : "#566f94",
-        }}
         onClick={() => setExpanded(expanded ? false : true)}
       >
         {topic}
