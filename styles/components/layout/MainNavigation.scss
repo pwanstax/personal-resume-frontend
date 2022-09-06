@@ -1,7 +1,5 @@
-@import "../../utilities.scss";
-
 .navigation-container {
-  background-color: #eff1f6ab;
+  background-color: var(--nav-background);
   z-index: 100;
   position: sticky;
   border-top-style: none;
@@ -10,6 +8,7 @@
   padding: 36px 81px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
   @media only screen and (max-width: 800px) {
     padding: 28px 48px;
@@ -29,10 +28,21 @@
   }
   a {
     text-decoration: none;
-    color: black;
+    color: var(--nav-color);
     font-size: 20px;
     @media only screen and (max-width: 350px) {
       font-size: 14px;
+    }
+  }
+  .switch-theme {
+    p {
+      margin: 0;
+      font-size: 36px;
+      user-select: none; /* standard syntax */
+      -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+      -moz-user-select: none; /* mozilla browsers */
+      -khtml-user-select: none; /* webkit (konqueror) browsers */
+      -ms-user-select: none; /* IE10+ */
     }
   }
 }

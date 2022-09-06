@@ -1,7 +1,5 @@
-@import "../../utilities.scss";
-
 .layout-container {
-  background-color: $primary-background;
+  background-color: var(--primary-background);
   padding-bottom: 50px;
   min-height: 100vh;
 
@@ -24,7 +22,7 @@
     }
     div {
       width: 350px;
-      border: 2px dashed $caution-color;
+      border: 2px dashed var(--caution-color);
     }
   }
 }

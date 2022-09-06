@@ -1,11 +1,10 @@
-@import "../../utilities.scss";
-
 .accordion-container {
   width: 100%;
   header {
     padding: 16px;
     border-radius: 10px;
-    color: $primary-color;
+    color: var(--primary-color);
+    background-color: var(--accordion-background);
     cursor: pointer;
     font-size: 24px;
     text-align: center;
@@ -29,9 +28,9 @@
       grid-row-gap: 8px;
     }
     div {
-      background-color: $secondary-background;
+      background-color: var(--secondary-background);
       border-radius: 10px;
-      color: $primary-color;
+      color: var(--accordion-content);
       padding: 16px 0;
       font-size: 18px;
       width: 100%;
