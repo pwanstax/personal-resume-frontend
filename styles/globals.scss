@@ -3,7 +3,10 @@
 
 @import "./components/pages/HomePage.scss";
 @import "./components/pages/WorkPage.scss";
+@import "./components/pages/WorkCard.scss";
 @import "./components/pages/AboutPage.scss";
+@import "./components/pages/NotFoundPage.scss";
+@import "./components/pages/BlogPage.scss";
 @import "./components/common/Accordion.scss";
 @import "./components/common/Modal.scss";
 @import "./utilities.scss";
@@ -19,4 +22,30 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+
+.running-text {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 10px;
+  &:hover {
+    span {
+      animation: marquee 2.5s linear infinite;
+    }
+  }
+  span {
+    color: var(--secondary-color);
+    font-size: 32px;
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

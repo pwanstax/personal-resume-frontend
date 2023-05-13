@@ -42,21 +42,21 @@ const MainNavigation = () => {
 
   return (
     <div className="navigation-container">
-      <a href="#">Pawan Kanjeam</a>
+      <a href="#">Pawan Kanjeam / Full Stack Developer</a>
       <div className="menu-section">
-        <a href="#work">Work</a>
-        <a href="#aboutMe">About</a>
-        <a href="#aboutMe">Contact</a>
+        <a href="https://www.pawankanjeam.com/#work">Work</a>
+        <a href="https://www.pawankanjeam.com/#aboutMe">About Me</a>
+        <a href="/BlogPage">Blog</a>
+        <motion.div
+          className="switch-theme"
+          whileHover={{scale: 1.025, cursor: "pointer"}}
+          onClick={handleMode}
+          animate={controlMode}
+          variants={modeVariants}
+        >
+          {isLightMode ? <p>Light Theme</p> : <p>Black Theme</p>}
+        </motion.div>
       </div>
-      <motion.div
-        className="switch-theme"
-        whileHover={{scale: 1.025, cursor: "pointer"}}
-        onClick={handleMode}
-        animate={controlMode}
-        variants={modeVariants}
-      >
-        {isLightMode ? <p>🌕</p> : <p>🌑</p>}
-      </motion.div>
     </div>
   );
 };

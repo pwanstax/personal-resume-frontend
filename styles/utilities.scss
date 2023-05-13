@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root[data-theme="light"] {
   --primary-font: "Work Sans", sans-serif;
-  --primary-background: #eef1f6;
-  --nav-background: rgba(239, 241, 246, 0.671);
+  --secondary-font: "Bebas Neue", sans-serif;
+  --primary-background: white;
+  --nav-background: rgba(255, 255, 255, 0.806);
   --secondary-background: rgb(18 67 255 / 7%);
 
   --caution-color: #b71c1c;
   --primary-color: #566f94;
-  --secondary-color: #626261;
+  --secondary-color: black;
   --content-background: #297cf630;
   --main-color: #313130;
   --description-color: black;
@@ -16,23 +18,26 @@
   --modal-background: #dfe5f8;
   --accordion-background: rgb(18 67 255 / 7%);
   --accordion-content: var(--primary-color);
+  --background-color-hover: #566f9433;
 }
 :root[data-theme="dark"] {
   --primary-font: "Work Sans", sans-serif;
-  --primary-background: #061539;
+  --secondary-font: "Bebas Neue", sans-serif;
+  --primary-background: black;
   --secondary-background: #566f94ad;
-  --nav-background: #071538ab;
+  --nav-background: rgba(0, 0, 0, 0.691);
   --caution-color: #b71c1cba;
   --primary-color: #e59e9e;
-  --secondary-color: #c0c0c0;
+  --secondary-color: white;
   --content-background: #297cf630;
-  --main-color: #dededed1;
+  --main-color: white;
   --description-color: var(--secondary-color);
-  --nav-color: #ffffffbf;
+  --nav-color: white;
   --modal-background: #3c5277;
 
   --accordion-background: #566f94ad;
   --accordion-content: var(--description-color);
+  --background-color-hover: #e59e9e2d;
 }
 
 $primary-font: var(--primary-font);

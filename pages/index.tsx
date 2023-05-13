@@ -14,11 +14,11 @@ const MainPage: NextPage = () => {
       </Head>
       <HomePage />
       <div id="work" className="content-divider">
-        <div></div>
+        My Opinion of Programming {/*i love coding but it hates me...*/}
       </div>
       <WorkPage />
       <div id="aboutMe" className="content-divider">
-        <div></div>
+        Click to Hire me!!! Please 🥺
       </div>
       <AboutPage />
     </>

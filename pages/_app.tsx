@@ -1,5 +1,6 @@
 import "../styles/globals.scss";
 import "../styles/utilities.scss";
+import "@fortawesome/fontawesome-free/css/all.css";
 import type {AppProps} from "next/app";
 import Layout from "../components/layout/Layout";
 import {useEffect} from "react";
