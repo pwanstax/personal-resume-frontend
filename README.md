@@ -70,6 +70,10 @@ To get a local copy up and running follow these simple steps.
 
 4. Open http://localhost:3000 in your browser to see the app.
 
+![Screenshot 2566-05-14 at 01 37 20](https://github.com/pwanstax/personal-resume-frontend/assets/70096049/35f7ec79-81a5-44d0-bfbe-aff8c33c7bf4)
+
+![Screenshot 2566-05-14 at 01 37 28](https://github.com/pwanstax/personal-resume-frontend/assets/70096049/c0d989a2-cf6e-402d-bc01-c4e9ae3cc5bd)
+
 
 ## Contributing
 
