@@ -48,12 +48,9 @@ const AboutPage: NextPage = () => {
           <span>Click to see my real interest</span>
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
-{
-  /* <div className="running-text content">
-        <span>{interest}</span>
-      </div> */
-}
+
 export default AboutPage;
