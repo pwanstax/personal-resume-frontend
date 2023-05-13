@@ -11,7 +11,7 @@
       .info-topic {
         font-size: 80px;
         font-weight: 400;
-        font-family: var(--secondary-font);
+        font-family: var(--secondary-font) !important;
         color: var(--main-color);
         margin-left: 36px;
         @media only screen and (max-width: 800px) {
