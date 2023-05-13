@@ -44,6 +44,16 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/bebas-neue@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/bebas-neue/-/bebas-neue-4.5.9.tgz#66e73f9a1fc10575a679f7699a47b70fd3ee7e40"
+  integrity sha512-xacwu7elbiZIKgmzE0U4U29oh/WjoAmYLg2Eq9vEvq3cJqfO/wRkQZpNS6o1WU1i804AzJF//91E16c9+VgQlA==
+
+"@fontsource/work-sans@^4.5.14":
+  version "4.5.14"
+  resolved "https://registry.yarnpkg.com/@fontsource/work-sans/-/work-sans-4.5.14.tgz#965bf103baa9f812d042b5f678a34f632fa76f2e"
+  integrity sha512-AFBSDBA3hnSCXHwb52qBOMEGqF5nfdbANp+y5/hbE1PMjYfFY0lUdtUwL5J7mRAdyn1NJwobJlhduHtlAyPzmA==
+
 "@fortawesome/fontawesome-free@^6.4.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.4.0.tgz#1ee0c174e472c84b23cb46c995154dc383e3b4fe"
