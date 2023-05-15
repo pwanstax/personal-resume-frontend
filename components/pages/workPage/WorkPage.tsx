@@ -242,6 +242,7 @@ const WorkPage: NextPage = () => {
         <div className="card-section">
           {works.map((work) => (
             <WorkCard
+              key={work.title}
               images={work.image}
               title={work.title}
               tags={work.tags}
@@ -260,6 +261,7 @@ const WorkPage: NextPage = () => {
         <div className="card-section">
           {projects.map((project) => (
             <WorkCard
+              key={project.title}
               images={project.image}
               title={project.title}
               tags={project.tags}

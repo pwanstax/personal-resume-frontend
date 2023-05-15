@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {useRouter} from "next/router";
-import {stringify} from "querystring";
 
 interface GalleryBoxProps {
   images: string[];
@@ -80,7 +79,11 @@ const GalleryBox: React.FC<GalleryBoxProps> = ({
         <p>{duration}</p>
         <div className="tags">
           {tags.map((tag) => {
-            return <div className="chip">{tag}</div>;
+            return (
+              <div className="chip" key={tag}>
+                {tag}
+              </div>
+            );
           })}
         </div>
         <div className="link" onClick={() => navigateToLink(blogLink)}>

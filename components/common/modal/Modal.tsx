@@ -60,7 +60,7 @@ const Modal = ({
           <h4>( {time} )</h4>
           <h4>{description}</h4>
           {info.map((each) => (
-            <p>- {each}</p>
+            <p key={each}>- {each}</p>
           ))}
         </div>
 

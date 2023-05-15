@@ -31,6 +31,7 @@ const AboutPage: NextPage = () => {
         {interests.map((interest) => {
           return (
             <div
+              key={interest.name}
               className={
                 !interest.status && revealed
                   ? "running-text content black"

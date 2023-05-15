@@ -26,7 +26,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://fonts.googleapis.com  https://images.unsplash.com https://officesnapshots.com https://cdn10.agoda.net https://fastwork.co https://miro.medium.com https://user-images.githubusercontent.com https://camo.githubusercontent.com https://i.ytimg.com https://is3-ssl.mzstatic.com https://i.pinimg.com",
+              "font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://fonts.googleapis.com  https://images.unsplash.com https://officesnapshots.com https://cdn10.agoda.net https://fastwork.co https://miro.medium.com https://user-images.githubusercontent.com https://camo.githubusercontent.com https://i.ytimg.com https://is3-ssl.mzstatic.com https://i.pinimg.com",
           },
         ],
       },
