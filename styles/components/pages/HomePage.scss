@@ -1,9 +1,9 @@
 .homepage-container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 65% auto;
   // gap: 5%;
-  margin-top: 25vh;
-  margin-bottom: 23vh !important;
+  margin-top: 21vh;
+  margin-bottom: 21vh !important;
   justify-items: center;
   @media only screen and (max-width: 1150px) {
     grid-template-columns: 100%;
@@ -21,22 +21,22 @@
       margin: 0;
     }
     h2 {
-      font-size: 72px;
+      font-size: 64px;
       color: var(--secondary-color);
     }
     h1 {
-      font-size: 96px;
+      font-size: 72px;
       color: var(--secondary-color);
 
       span {
-        font-size: 108px;
+        font-size: 96px;
         color: var(--primary-color);
       }
     }
   }
   .info-description {
     margin: 0;
-    margin-top: 18px;
+    margin-top: 8px;
     font-size: 18px;
     color: var(--secondary-color);
     line-height: 26px;
